@@ -9,4 +9,11 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface UsuarioRepository extends JpaRepository<Produto, Long> {
+    public void findById(Long id){
+
+    }
+
+    public void save(Usuario usuario){
+        
+    }
 }
