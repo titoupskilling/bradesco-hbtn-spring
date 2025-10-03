@@ -37,6 +37,6 @@ class ProdutoServiceTest {
 
     @Test
     void deveLancarExcecaoQuandoProdutoNaoExistir() {
-      // implemente
+      assertThrows(new Exception(), new com.example.demo.model.Produto());
     }
 }
