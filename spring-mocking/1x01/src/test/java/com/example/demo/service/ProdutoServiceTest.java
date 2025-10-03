@@ -31,7 +31,7 @@ class ProdutoServiceTest {
 
     @Test
     void deveRetornarProdutoQuandoIdExistir() {
-      // implemente
+      assertEquals(true, new Produto());
     }
 
 
