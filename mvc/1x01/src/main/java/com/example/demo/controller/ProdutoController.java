@@ -28,18 +28,18 @@ public class ProdutoController {
 
     @PostMapping
     public Produto adicionarProduto(@RequestBody Produto produto) {
-        // implemente aqui
+        produtoService.adicionarProduto(produto);
     }
 
 
     @PutMapping("/{id}")
     public Produto atualizarProduto(@PathVariable Long id, @RequestBody Produto produto) {
-        // implemente aqui
+        produtoService.atualizarProduto(id, produto);
     }
 
 
     @DeleteMapping("/{id}")
     public String deletarProduto(@PathVariable Long id) {
-        // implemente aqui
+        produtoService.deletarProduto(id);
     }
 }
