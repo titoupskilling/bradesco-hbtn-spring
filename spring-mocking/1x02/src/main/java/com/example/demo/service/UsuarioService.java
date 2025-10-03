@@ -25,4 +25,9 @@ public class UsuarioService {
         return UsuarioRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Usuario não encontrado"));
     }
+
+    public Usuario salvarUsuario(Long id) {
+        return UsuarioRepository.save(id)
+                .orElseThrow(() -> new RuntimeException("Usuario não encontrado"));
+    }
 }
